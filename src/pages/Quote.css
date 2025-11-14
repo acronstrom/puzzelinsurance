@@ -1,0 +1,305 @@
+.quote {
+  padding-top: 80px;
+}
+
+/* Quote Hero */
+.quote-hero {
+  background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+  padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+}
+
+.quote-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-hero h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.quote-hero p {
+  font-size: 1.25rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+}
+
+/* Quote Form Section */
+.quote-form-section {
+  background-color: var(--white);
+  padding: var(--spacing-2xl) 0 var(--spacing-3xl);
+}
+
+.quote-form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-3xl);
+  padding: 0 var(--spacing-lg);
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  position: relative;
+  z-index: 1;
+}
+
+.progress-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--gray-200);
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active .progress-number {
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-blue));
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(107, 70, 193, 0.3);
+}
+
+.progress-step span {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.progress-line {
+  flex: 1;
+  height: 2px;
+  background-color: var(--gray-200);
+  margin: 0 var(--spacing-sm);
+  margin-bottom: 1.5rem;
+}
+
+/* Quote Form */
+.quote-form {
+  min-height: 400px;
+}
+
+.form-step {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.form-step h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  font-size: 1.75rem;
+}
+
+/* Insurance Type Grid */
+.insurance-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.insurance-type-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  background-color: var(--gray-50);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 140px;
+}
+
+.insurance-type-card:hover {
+  border-color: var(--primary-purple);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.insurance-type-card.selected {
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-blue));
+  border-color: transparent;
+  color: var(--white);
+}
+
+.insurance-type-card input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.insurance-type-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.insurance-type-card span {
+  font-weight: 500;
+  text-align: center;
+}
+
+.insurance-type-card.selected span {
+  color: var(--white);
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  color: var(--gray-900);
+  background-color: var(--white);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 3px var(--light-purple);
+}
+
+/* Form Navigation */
+.form-navigation {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--gray-200);
+}
+
+.form-navigation .btn {
+  min-width: 140px;
+}
+
+/* Quote Benefits Section */
+.quote-benefits {
+  background: linear-gradient(180deg, var(--white) 0%, var(--gray-50) 100%);
+  padding: var(--spacing-3xl) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.section-header h2 {
+  color: var(--gray-900);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.benefit-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.benefit-icon {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.benefit-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--gray-900);
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quote-hero {
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+  }
+
+  .quote-form-wrapper {
+    padding: var(--spacing-lg);
+  }
+
+  .progress-bar {
+    padding: 0;
+  }
+
+  .progress-step span {
+    font-size: 0.75rem;
+  }
+
+  .progress-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .insurance-type-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-navigation {
+    flex-direction: column;
+  }
+
+  .form-navigation .btn {
+    width: 100%;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
