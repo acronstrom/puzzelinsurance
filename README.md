@@ -52,8 +52,9 @@ npm run preview
 1. **Home** (`/`) - Hero section, services overview, features, testimonials, and CTA
 2. **About** (`/about`) - Company history, mission, values, timeline, and team
 3. **Services** (`/services`) - Detailed insurance products with features and pricing
-4. **Contact** (`/contact`) - Contact form, office locations, and contact information
-5. **Quote** (`/quote`) - Multi-step quote request form
+4. **FAQ** (`/faq`) - Comprehensive frequently asked questions with 30+ answers across 6 categories
+5. **Contact** (`/contact`) - Contact form, office locations, and contact information
+6. **Quote** (`/quote`) - Multi-step quote request form
 
 ## 🎯 Features
 

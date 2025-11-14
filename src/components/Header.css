@@ -78,6 +78,10 @@
   transition: color 0.3s ease;
 }
 
+.nav-menu .btn-primary {
+  color: #FFFFFF !important;
+}
+
 .nav-menu a:not(.btn):hover {
   color: var(--primary-purple);
 }
@@ -99,6 +103,13 @@
 
 .nav-cta {
   margin-left: 1rem;
+}
+
+.nav-cta .btn {
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 140px;
 }
 
 .mobile-menu-toggle {
